@@ -1,0 +1,87 @@
+{
+  "major_donors": {
+    "Publix": {
+      "industry": "Retail grocery",
+      "headquarters": "Lakeland, FL",
+      "political_contributions": {
+        "total_2020_2024": 8500000,
+        "recipients": [
+          "Florida Republican Party",
+          "DeSantis Victory Fund",
+          "Florida Chamber PAC"
+        ]
+      },
+      "policy_interests": [
+        "Labor law (minimum wage, scheduling)",
+        "Business regulation",
+        "Tax policy"
+      ],
+      "notable_owners": ["Jenkins Family"]
+    },
+    "FPL/NextEra": {
+      "industry": "Utility/Energy",
+      "headquarters": "Juno Beach, FL",
+      "political_contributions": {
+        "total_2020_2024": 6200000,
+        "recipients": [
+          "Florida Republican Party",
+          "Various legislative campaigns",
+          "Ballot initiative committees"
+        ]
+      },
+      "policy_interests": [
+        "Utility rate approvals",
+        "Renewable energy policy",
+        "Grid infrastructure"
+      ],
+      "regulatory_body": "Florida Public Service Commission"
+    },
+    "U.S. Sugar": {
+      "industry": "Agriculture",
+      "headquarters": "Clewiston, FL",
+      "political_contributions": {
+        "total_2020_2024": 4800000,
+        "recipients": [
+          "Florida Republican Party",
+          "Various legislative campaigns",
+          "Agricultural PACs"
+        ]
+      },
+      "policy_interests": [
+        "Agricultural subsidies",
+        "Water policy (Everglades)",
+        "Environmental regulation"
+      ],
+      "federal_subsidies": "Sugar price supports"
+    }
+  },
+  "policy_outcomes": {
+    "labor_law": {
+      "minimum_wage": "State minimum ($12/hr 2024)",
+      "preemption": "State preempts local labor laws",
+      "beneficiary": "Publix, retail sector"
+    },
+    "utility_rates": {
+      "rate_increase_approvals": "Regular PSC approvals",
+      "renewable_mandates": "Voluntary, not mandatory",
+      "beneficiary": "FPL/NextEra"
+    },
+    "agriculture": {
+      "everglades_restoration": "Ongoing, compromise approach",
+      "sugar_subsidies": "Maintained at federal level",
+      "beneficiary": "U.S. Sugar"
+    }
+  },
+  "roi_analysis": {
+    "methodology": "Policy value estimate / donation amount",
+    "caveat": "Estimates are approximations",
+    "examples": [
+      {
+        "donor": "U.S. Sugar",
+        "donations": 4800000,
+        "policy_value_estimate": 200000000,
+        "roi_ratio": 41.7
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "description": "Insurance industry political contribution patterns",
+  "major_donors": [
+    {
+      "name": "Insurance Industry Consortium",
+      "type": "trade_association",
+      "members": [
+        "Citizens Property Insurance",
+        "State Farm Florida",
+        "Allstate Florida",
+        "Universal Insurance Holdings"
+      ],
+      "historical_contributions": {
+        "2020": 2500000,
+        "2022": 4500000,
+        "2024": 3000000
+      }
+    }
+  ],
+  "recipients": [
+    {
+      "type": "political_committee",
+      "name": "Florida Republican Party",
+      "alignment": "Pro-tort reform"
+    },
+    {
+      "type": "pac",
+      "name": "Jobs for Florida PAC",
+      "alignment": "Pro-business"
+    }
+  ],
+  "legislative_correlation": {
+    "tort_reform_bills": [
+      {
+        "bill": "HB 837",
+        "year": 2023,
+        "description": "Civil Remedies",
+        "outcome": "Passed",
+        "insurance_benefit": "Reduced lawsuit exposure"
+      },
+      {
+        "bill": "SB 2-A",
+        "year": 2022,
+        "description": "Property Insurance",
+        "outcome": "Passed",
+        "insurance_benefit": "Rate relief mechanisms"
+      }
+    ],
+    "vote_patterns": {
+      "methodology": "Correlation between contribution receipt and favorable votes",
+      "observed_correlation": 0.67,
+      "note": "Correlation does not imply causation"
+    }
+  },
+  "rate_outcomes": {
+    "2023": {
+      "rate_change": -0.08,
+      "new_entrants": 5,
+      "market_stabilization": true
+    },
+    "2024": {
+      "rate_change": -0.03,
+      "new_entrants": 3,
+      "market_stabilization": true
+    }
+  }
+}

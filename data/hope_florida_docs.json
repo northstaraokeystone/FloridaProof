@@ -1,0 +1,66 @@
+{
+  "entity_mapping": {
+    "Hope Florida Foundation": {
+      "type": "foundation",
+      "founder": "Casey DeSantis",
+      "established": "2021",
+      "purpose": "Connect Floridians to resources",
+      "funding_source": "Centene Medicaid settlement",
+      "allocation": 10000000
+    },
+    "Secure Florida's Future": {
+      "type": "nonprofit",
+      "linked_to": "Florida Chamber of Commerce",
+      "grant_received": 5000000,
+      "purpose": "Policy advocacy",
+      "pac_connection": "Keep Florida Clean PAC"
+    },
+    "Save Our Society from Drugs": {
+      "type": "nonprofit",
+      "grant_received": 5000000,
+      "purpose": "Drug prevention advocacy",
+      "pac_connection": "Keep Florida Clean PAC"
+    },
+    "Keep Florida Clean PAC": {
+      "type": "political_action_committee",
+      "chaired_by": "James Uthmeier",
+      "campaign": "Opposed Amendment 3 (marijuana legalization)",
+      "election_cycle": "2024"
+    }
+  },
+  "key_figures": {
+    "Casey DeSantis": {
+      "role": "First Lady of Florida",
+      "connection": "Hope Florida Foundation founder"
+    },
+    "James Uthmeier": {
+      "role": "Attorney General (2025)",
+      "prior_role": "Governor's Chief of Staff",
+      "connection": "Chaired Keep Florida Clean PAC"
+    }
+  },
+  "timeline": {
+    "2019": "Centene Medicaid fraud investigation begins",
+    "2021": "Hope Florida Foundation established",
+    "2022": "Centene settlement ($67M to Florida)",
+    "2023": "Hope Florida receives $10M allocation",
+    "2024_Q1": "Grants to nonprofits ($5M each)",
+    "2024_Q3": "Keep Florida Clean PAC opposes Amendment 3",
+    "2024_Nov": "Amendment 3 fails to reach 60% threshold",
+    "2025_Jan": "James Uthmeier becomes Attorney General",
+    "2025_May": "Criminal investigation opened"
+  },
+  "allegations": {
+    "primary": "Settlement funds routed through foundation to political campaigns",
+    "routing_path": [
+      "Centene settlement ($67M)",
+      "State of Florida",
+      "Hope Florida Foundation ($10M)",
+      "Secure Florida's Future ($5M)",
+      "Save Our Society from Drugs ($5M)",
+      "Keep Florida Clean PAC"
+    ],
+    "legal_status": "Under investigation",
+    "investigation_body": "Unknown (criminal investigation)"
+  }
+}
