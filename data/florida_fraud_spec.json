@@ -1,0 +1,83 @@
+{
+  "domains": {
+    "hope_florida": {
+      "description": "Settlement -> Foundation -> PAC fund routing",
+      "documented_amount": 10000000,
+      "source_settlement": "Centene Medicaid $67M",
+      "key_entities": [
+        "Hope Florida Foundation",
+        "Secure Florida's Future",
+        "Save Our Society from Drugs",
+        "Keep Florida Clean PAC"
+      ],
+      "key_figures": ["Casey DeSantis", "James Uthmeier"],
+      "status": "Criminal investigation opened May 2025"
+    },
+    "insurance": {
+      "description": "Donor -> Tort Reform -> Rate Decision correlation",
+      "estimated_value": 1000000000,
+      "reforms": ["2022-2024 tort changes"],
+      "outcomes": ["Rate decreases", "New entrant insurers"],
+      "key_donors": ["Insurance Industry Consortium"]
+    },
+    "sheriff": {
+      "description": "No-show contracts and kickback patterns",
+      "documented_case": "Lee County Sheriff Marceno",
+      "contract_amount": 5700,
+      "status": "Federal probe closed Nov 2025 without charges"
+    },
+    "corporate": {
+      "description": "Major donor -> policy favor correlation",
+      "key_donors": ["Publix", "FPL/NextEra", "U.S. Sugar"],
+      "policy_areas": ["Business regulation", "Utility rates", "Agricultural subsidies"]
+    },
+    "pandemic": {
+      "description": "Individual PPP/unemployment fraud aggregation",
+      "pattern": "Individual/small-scale, not systemic",
+      "note": "No Minnesota-equivalent discovered"
+    }
+  },
+  "cascade_weights": {
+    "hope_florida_to_corporate": 0.75,
+    "hope_florida_to_insurance": 0.40,
+    "corporate_to_insurance": 0.65,
+    "sheriff_to_corporate": 0.30,
+    "pandemic_to_sheriff": 0.20
+  },
+  "protection_network": {
+    "donor_tier": [
+      "Insurance Industry Consortium",
+      "Publix/Jenkins Family",
+      "FPL/NextEra",
+      "U.S. Sugar"
+    ],
+    "political_tier": [
+      "Governor's Office",
+      "AG Office",
+      "Legislature Leadership",
+      "County Sheriffs"
+    ],
+    "agency_tier": [
+      "DEO",
+      "OIR",
+      "AHCA",
+      "County Audit Committees"
+    ],
+    "grantee_tier": [
+      "Hope Florida Foundation",
+      "Chamber-linked nonprofits",
+      "Political PACs",
+      "Sheriff office contractors"
+    ]
+  },
+  "slo_thresholds": {
+    "hope_florida_detection": 0.92,
+    "insurance_detection": 0.88,
+    "sheriff_detection": 0.90,
+    "corporate_detection": 0.85,
+    "pandemic_detection": 0.95,
+    "alpha_50_percent": 0.70,
+    "alpha_75_percent": 0.50,
+    "watchers_autocatalytic_min": 3
+  }
+}

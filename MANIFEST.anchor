@@ -1,0 +1,68 @@
+{
+  "glyph_type": "anchor",
+  "id": "floridaproof-v1.0.0",
+  "ts": "2025-12-26T00:00:00Z",
+  "tenant_id": "floridaproof-fl-state",
+  "version": "1.0.0",
+  "purpose": "Florida Political Fund Routing Detection Monte Carlo Simulation",
+  "components": {
+    "core": "src/core.py",
+    "domains": [
+      "src/domains/hope_florida.py",
+      "src/domains/insurance.py",
+      "src/domains/sheriff.py",
+      "src/domains/corporate.py",
+      "src/domains/pandemic.py"
+    ],
+    "infrastructure": [
+      "src/cascade.py",
+      "src/network.py",
+      "src/watchers.py",
+      "src/pressure.py",
+      "src/axiom.py"
+    ],
+    "simulation": "src/sim.py",
+    "cli": "cli.py",
+    "watchdog": "watchdog.py"
+  },
+  "receipt_types": [
+    "hope_florida",
+    "insurance_influence",
+    "sheriff_contract",
+    "corporate_capture",
+    "pandemic_fraud",
+    "cascade",
+    "network",
+    "watcher",
+    "pressure",
+    "axiom",
+    "simulation"
+  ],
+  "scenarios": [
+    "BASELINE",
+    "STRESS",
+    "GENESIS",
+    "CASCADE",
+    "PRESSURE",
+    "GODEL"
+  ],
+  "slo_thresholds": {
+    "hope_florida_detection": 0.92,
+    "insurance_detection": 0.88,
+    "sheriff_detection": 0.90,
+    "corporate_detection": 0.85,
+    "pandemic_detection": 0.95,
+    "alpha_50_percent": 0.70
+  },
+  "gates": {
+    "t2h": "gate_t2h.sh",
+    "t24h": "gate_t24h.sh",
+    "t48h": "gate_t48h.sh"
+  },
+  "hash_strategy": {
+    "algorithm": ["SHA256", "BLAKE3"],
+    "merkle": "BLAKE3"
+  },
+  "signature": "COMPUTE_ON_DEPLOY",
+  "merkle_anchor": "COMPUTE_ON_DEPLOY"
+}

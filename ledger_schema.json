@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0.0",
+  "tenant_id": "floridaproof-fl-state",
+  "hash_strategy": {
+    "algorithm": ["SHA256", "BLAKE3"],
+    "format": "sha256:blake3",
+    "merkle_algorithm": "BLAKE3"
+  },
+  "receipt_types": {
+    "hope_florida": {
+      "required_fields": [
+        "settlement_id",
+        "source_settlement",
+        "foundation_allocation",
+        "downstream_grants",
+        "pac_connection_detected",
+        "routing_risk_score",
+        "fraud_detected"
+      ],
+      "optional_fields": [
+        "uthmeier_linked",
+        "fraud_type"
+      ]
+    },
+    "insurance_influence": {
+      "required_fields": [
+        "insurer_id",
+        "total_contributions",
+        "correlation_coefficient",
+        "influence_risk_score"
+      ],
+      "optional_fields": [
+        "legislators_receiving",
+        "votes_correlated",
+        "rate_benefit_detected"
+      ]
+    },
+    "sheriff_contract": {
+      "required_fields": [
+        "contract_id",
+        "sheriff_office",
+        "contractor",
+        "monthly_amount",
+        "fraud_risk_score"
+      ],
+      "optional_fields": [
+        "deliverables_documented",
+        "personal_tie_detected",
+        "kickback_suspected",
+        "gambling_flag"
+      ]
+    },
+    "corporate_capture": {
+      "required_fields": [
+        "corporation",
+        "total_donations",
+        "correlation_coefficient",
+        "capture_risk_score"
+      ],
+      "optional_fields": [
+        "policy_benefits",
+        "roi_ratio"
+      ]
+    },
+    "pandemic_fraud": {
+      "required_fields": [
+        "case_id",
+        "program",
+        "amount",
+        "fraud_confirmed"
+      ],
+      "optional_fields": [
+        "fraud_type",
+        "network_id"
+      ]
+    },
+    "cascade": {
+      "required_fields": [
+        "source_domain",
+        "affected_domains",
+        "systemic_risk"
+      ],
+      "optional_fields": [
+        "cascade_path",
+        "total_propagation"
+      ]
+    },
+    "network": {
+      "required_fields": [
+        "entity",
+        "protection_score"
+      ],
+      "optional_fields": [
+        "connected_donors",
+        "connected_politicians",
+        "audit_resistance",
+        "exposure_threshold"
+      ]
+    },
+    "watcher": {
+      "required_fields": [
+        "watcher_id",
+        "event",
+        "target_domain"
+      ],
+      "optional_fields": [
+        "detections_this_cycle",
+        "self_reference_score",
+        "is_autocatalytic"
+      ]
+    },
+    "pressure": {
+      "required_fields": [
+        "pressure_level",
+        "detection_baseline",
+        "detection_under_pressure",
+        "alpha"
+      ],
+      "optional_fields": [
+        "probes_halted",
+        "subpoenas_ignored"
+      ]
+    },
+    "axiom": {
+      "required_fields": [
+        "flow_id",
+        "mdl",
+        "compression_ratio",
+        "fraud_score"
+      ],
+      "optional_fields": [
+        "original_bits",
+        "compressed_bits",
+        "structural_anomaly"
+      ]
+    },
+    "simulation": {
+      "required_fields": [
+        "cycles_completed",
+        "all_passed"
+      ],
+      "optional_fields": [
+        "detection_rates",
+        "alpha",
+        "watchers_spawned",
+        "receipt_hash"
+      ]
+    },
+    "anomaly": {
+      "required_fields": [
+        "metric",
+        "classification",
+        "action"
+      ],
+      "optional_fields": [
+        "baseline",
+        "delta",
+        "expected",
+        "actual"
+      ]
+    },
+    "violation": {
+      "required_fields": [
+        "metric",
+        "rate",
+        "threshold"
+      ],
+      "optional_fields": [
+        "classification",
+        "action"
+      ]
+    }
+  },
+  "common_fields": {
+    "receipt_type": "string (required)",
+    "ts": "ISO8601 timestamp (required)",
+    "tenant_id": "string (required)",
+    "payload_hash": "sha256:blake3 format (required)"
+  }
+}

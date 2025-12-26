@@ -1,0 +1,83 @@
+{
+  "documented_cases": {
+    "lee_county_marceno": {
+      "sheriff": "Carmine Marceno",
+      "county": "Lee County",
+      "contract_details": {
+        "contractor": "Ken Romano",
+        "contractor_type": "Jeweler",
+        "monthly_amount": 5700,
+        "contract_type": "Consulting",
+        "deliverables": "None documented publicly"
+      },
+      "allegations": [
+        "No-show contract",
+        "Funds funneled to sheriff's father",
+        "Luxury vehicle purchase",
+        "Gambling activity ties",
+        "Unreported gifts"
+      ],
+      "investigation": {
+        "body": "Federal authorities",
+        "status": "Closed without charges",
+        "closure_date": "November 2025"
+      }
+    }
+  },
+  "pattern_indicators": {
+    "no_show_contract": {
+      "description": "Contract with no documented work product",
+      "red_flags": [
+        "Consulting contract to non-expert",
+        "No deliverables specified",
+        "Payment to personal associates"
+      ],
+      "detection_weight": 0.4
+    },
+    "kickback_routing": {
+      "description": "Contract funds routed to personal benefit",
+      "red_flags": [
+        "Payments to family members",
+        "Payments to business partners",
+        "Intermediary entities"
+      ],
+      "detection_weight": 0.4
+    },
+    "market_rate_deviation": {
+      "description": "Contract amount outside normal range",
+      "red_flags": [
+        "Above market rate for services",
+        "Below market may indicate hidden compensation"
+      ],
+      "detection_weight": 0.15
+    },
+    "gambling_correlation": {
+      "description": "Contractor or recipient with gambling activity",
+      "red_flags": [
+        "Large gambling wins",
+        "Casino visits inconsistent with income"
+      ],
+      "detection_weight": 0.1
+    }
+  },
+  "florida_sheriffs": [
+    {
+      "county": "Lee County",
+      "population": 760000,
+      "budget": 250000000,
+      "contracts_analyzed": 150
+    },
+    {
+      "county": "Broward County",
+      "population": 1950000,
+      "budget": 800000000,
+      "contracts_analyzed": 400
+    },
+    {
+      "county": "Miami-Dade County",
+      "population": 2700000,
+      "budget": 950000000,
+      "contracts_analyzed": 500
+    }
+  ]
+}
